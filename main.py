@@ -14,7 +14,9 @@ import os
 app = FastAPI(
     title="Mental Health Prediction API",
     description="API for predicting mental health conditions from text",
-    version="1.0.0"
+    version="1.0.0",
+    docs_url="/docs",
+    redoc_url="/redoc"
 )
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '0'  # 0 = all logs, 1 = info, 2 = warnings, 3 = errors
